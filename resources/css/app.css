@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-form {
+    @apply w-full p-2 rounded-sm border border-zinc-800 focus:outline-none appearance-none;
+}
+
+.text-error {
+    @apply text-xs text-red-500;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+    transition: all 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.modal-enter-active .bg-black,
+.modal-leave-active .bg-black {
+    transition: opacity 0.3s ease;
+}
+
+.modal-enter-from .bg-black,
+.modal-leave-to .bg-black {
+    opacity: 0;
+}
